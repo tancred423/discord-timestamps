@@ -18,3 +18,7 @@ services:
     ports:
       - "${PORT:-7000}:7000"
     restart: always
+
+networks:
+  web:
+    external: true
